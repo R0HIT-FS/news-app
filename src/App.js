@@ -31,7 +31,7 @@ const App =()=> {
 
     return (
       <>
-      <Router>
+      <Router basename="news-app">
       <LoadingBar
         color='#f11946'
         progress={progress}
