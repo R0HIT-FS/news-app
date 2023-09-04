@@ -31,7 +31,7 @@ const App =()=> {
 
     return (
       <>
-      <Router basename='news-app'>
+      <Router>
       <LoadingBar
         color='#f11946'
         progress={progress}
@@ -39,7 +39,7 @@ const App =()=> {
       />
       <NavBar toggleMode={toggleMode}/>
       <Routes>
-          <Route exact path="/news-app" element={<News toggleMode={toggleMode}  setprogress={setprogress} apiKey={apiKey}   key="general" pageSize={6} country="in" category="general" />}></Route>
+          <Route exact path="/" element={<News toggleMode={toggleMode}  setprogress={setprogress} apiKey={apiKey}   key="general" pageSize={6} country="in" category="general" />}></Route>
           <Route exact path="/business"element={<News toggleMode={toggleMode}  setprogress={setprogress} apiKey={apiKey}   key="business" pageSize={6} country="in" category="business" />}></Route>
           <Route exact path="/entertainment"element={<News toggleMode={toggleMode}  setprogress={setprogress} apiKey={apiKey}   key="entertainment" pageSize={6} country="in" category="entertainment" />}></Route>
           <Route exact path="/health"element={<News toggleMode={toggleMode}  setprogress={setprogress} apiKey={apiKey}   key="health" pageSize={6} country="in" category="health" />}></Route>
