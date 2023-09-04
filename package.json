@@ -1,5 +1,6 @@
 {
   "name": "newsapp",
+  "homepage":"https://r0hit-fs.github.io/news-app"
   "version": "0.1.0",
   "private": false,
   "dependencies": {
